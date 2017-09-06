@@ -1,0 +1,9 @@
+# 1. Download a CSV file from OECD, read it and remove the last row
+
+
+oecd.df <- read.table("https://data.oecd.org/healthstat/infant-mortality-rates.htm")
+str(oecd.df)
+
+oecd.final <- head(oecd.df,-1)
+
+
